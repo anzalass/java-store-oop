@@ -25,31 +25,35 @@ public class ProductApps {
 
             switch (inputmenu) {
                 case 1:
-                    System.out.print("Masukkan Nama Barang: ");
-                    String name = scan.nextLine();
-
-                    System.out.print("Masukkan Merk Barang: ");
-                    String merk = scan.nextLine();
-                    Product product = new Product(0, "anzalas", "mahal");
-                    product.nama = name;
-                    product.merek = merk;
-                    service.CreateProduct(product);
+//                    System.out.print("Masukkan Nama Barang: ");
+//                    String name = scan.nextLine();
+//
+//                    System.out.print("Masukkan Merk Barang: ");
+//                    String merk = scan.nextLine();
+//
+//                    System.out.print("Masukan Harga Barang :");
+//                    Integer harga = scan.nextInt();
+//                    scan.nextLine();
+//
+//                    Product product = new Product(0, "anzalas", "mahal", 0);
+//                    product.nama = name;
+//                    product.merek = merk;
+//                    product.harga = harga;
+                    service.CreateProduct();
                     break;
                 case 2 :
                     System.out.print("Masukkan id yang ingin Diubah: ");
                     Integer id = scan.nextInt();
                     scan.nextLine();
 
-                    System.out.print("Nama Barang Baru: ");
-                    String namebaru = scan.nextLine(); // Membaca nama barang baru
 
-                    System.out.print("Merk Barang Baru: ");
-                    String merkbaru = scan.nextLine(); // Membaca merk barang baru
 
-                    Product product2 = new Product(0, "anzalas", "mahal");
-                    product2.nama = namebaru;
-                    product2.merek = merkbaru;
-                    service.UpdateProduct(id, product2);
+                  //  Product product2 = new Product(0, "anzalas", "mahal", 0);
+//                    product2.nama = namebaru;
+//                    product2.merek = merkbaru;
+//                    product2.harga = hargabaru;
+                    service.UpdateProduct(id);
+                    break;
                 case 3 :
                     System.out.print("Masukkan id yang ingin Dihapus: ");
                     Integer idhapus = scan.nextInt();
