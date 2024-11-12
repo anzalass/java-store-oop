@@ -14,22 +14,7 @@ public class ProductImpl implements InterfaceProduct {
         newProduct.setMerek();
         newProduct.setHarga();
         list.add(newProduct);
-
         System.out.println("Product Berhasil Ditambahkan");
-
-//        Random idrand = new Random();
-//        product.id = idrand.nextInt(100);
-//        if (product.nama.length() <= 3 || product.nama.length() >= 50 ) {
-//            System.out.println("Nama Product Harus Sesuai");
-//        } else if (product.merek.length() <= 3 || product.merek.length() >= 30){
-//            System.out.println("Merek Product Harus Sesuai");
-//        } else if (product.harga <=1) {
-//            System.out.println("Harga tidak boleh 0 atau kurang dari 0");
-//        } else {
-//            list.add(product);
-//        }
-
-
     }
 
     @Override

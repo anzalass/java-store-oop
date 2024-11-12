@@ -25,33 +25,12 @@ public class ProductApps {
 
             switch (inputmenu) {
                 case 1:
-//                    System.out.print("Masukkan Nama Barang: ");
-//                    String name = scan.nextLine();
-//
-//                    System.out.print("Masukkan Merk Barang: ");
-//                    String merk = scan.nextLine();
-//
-//                    System.out.print("Masukan Harga Barang :");
-//                    Integer harga = scan.nextInt();
-//                    scan.nextLine();
-//
-//                    Product product = new Product(0, "anzalas", "mahal", 0);
-//                    product.nama = name;
-//                    product.merek = merk;
-//                    product.harga = harga;
                     service.CreateProduct();
                     break;
                 case 2 :
                     System.out.print("Masukkan id yang ingin Diubah: ");
                     Integer id = scan.nextInt();
                     scan.nextLine();
-
-
-
-                  //  Product product2 = new Product(0, "anzalas", "mahal", 0);
-//                    product2.nama = namebaru;
-//                    product2.merek = merkbaru;
-//                    product2.harga = hargabaru;
                     service.UpdateProduct(id);
                     break;
                 case 3 :

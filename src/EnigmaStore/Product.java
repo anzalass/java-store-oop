@@ -23,27 +23,7 @@ public class Product {
         return harga;
     }
 
-    public void setHarga() {
-        boolean isvalid = false;
-        do {
-            System.out.print("Masukan Harga Barang :");
-            String harga =  scan.nextLine();
 
-            if (harga.isEmpty() && this.harga > 0) {
-                isvalid = true;
-                continue;
-            }
-
-            if(Integer.parseInt(harga)<0) {
-                System.out.println("Harga harus positif");
-                continue;
-            }
-            this.harga = Integer.parseInt(harga);
-            isvalid = true;
-        }
-        while (!isvalid);
-
-    }
 
     public Integer getId() {
         return id;
@@ -100,6 +80,28 @@ public class Product {
             this.merek = merk;
             isvalid = true;
         } while (!isvalid);
+
+    }
+
+    public void setHarga() {
+        boolean isvalid = false;
+        do {
+            System.out.print("Masukan Harga Barang :");
+            String harga =  scan.nextLine();
+
+            if (harga.isEmpty() && this.harga > 0) {
+                isvalid = true;
+                continue;
+            }
+
+            if(Integer.parseInt(harga)<0) {
+                System.out.println("Harga harus positif");
+                continue;
+            }
+            this.harga = Integer.parseInt(harga);
+            isvalid = true;
+        }
+        while (!isvalid);
 
     }
 
